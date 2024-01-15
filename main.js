@@ -19,12 +19,11 @@ const getSearchArt = () => {
 		.then((data) => {
 			console.log(data);
 
-			
-			const getItemImage = (id) => {
-					const API_IMAGE = API_IMAGE_START + id + API_IMAGE_END;
-					console.log(API_IMAGE);
-					return API_IMAGE;
-				};
+			// const getItemImage = (id) => {
+			// 		const API_IMAGE = API_IMAGE_START + id + API_IMAGE_END;
+			// 		console.log(API_IMAGE);
+			// 		return API_IMAGE;
+			// 	};
 
 			// data.forEach((art) => {
 			// 	const markup = `<li>${art.artist_title}</li>`;
@@ -44,14 +43,14 @@ const getItemImage = (id) => {
 	return API_IMAGE;
 };
 
-function newText() {
-	const newLi = document.createElement('li');
+// function newText() {
+// 	const newLi = document.createElement('li');
 
-	const newTextItem = document.createTextNode('Pictures');
-	newLi.appendChild(newTextItem);
+// 	const newTextItem = document.createTextNode('Pictures');
+// 	newLi.appendChild(newTextItem);
 
-	document.getElementById('#art-list').appendChild(newLi);
-}
+// 	document.getElementById('#art-list').appendChild(newLi);
+// }
 // function getData() {
 // //Example data from API response
 // const data = [
@@ -72,8 +71,6 @@ function newText() {
 // });
 // }
 
-
-
 // function getData() {
 // 	//Example data from API response
 // 	const data = [
@@ -81,25 +78,18 @@ function newText() {
 // 	{ image_id: "d0979087-dc1b-f259-a23f-169cdced27ee", title: "The Madonna of the Rosary" },
 // 	{ image_id: "f2a2c17c-8eee-a1b8-cfe4-71bb59f3798e", title: "Seated Boy" }
 // 	];
-	
+
 // 	data.map((item) => {
 // 	const art_list_item = document.createElement("li");
 // 	const art_node = document.createTextNode(item.title);
 // 	const img_element = document.createElement("img");
 // 	img_element.src = `https://www.artic.edu/iiif/2/${item.image_id}/full/200,/0/default.jpg`;
-	
+
 // 	art_list_item.appendChild(art_node);
 // 	art_list_item.appendChild(img_element);
 // 	document.getElementById("artList").appendChild(art_list_item);
 // 	});
 // 	}
 
-
-
-
-
-
-	
-
 btn.addEventListener('click', getSearchArt);
-btnImage.addEventListener('click', getItemImage(newLi));
+// btnImage.addEventListener('click', getItemImage(newLi));
