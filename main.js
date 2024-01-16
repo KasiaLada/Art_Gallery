@@ -93,3 +93,5 @@ const getItemImage = (id) => {
 
 btn.addEventListener('click', getSearchArt);
 // btnImage.addEventListener('click', getItemImage(newLi));
+
+
