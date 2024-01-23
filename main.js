@@ -36,11 +36,11 @@ const getSearchArt = () => {
     .catch((err) => console.error(err));
 };
 
-const getItemImage = (id) => {
-  const API_IMAGE = API_IMAGE_START + id + API_IMAGE_END;
-  console.log(API_IMAGE);
-  return API_IMAGE;
-};
+// const getItemImage = (id) => {
+//   const API_IMAGE = API_IMAGE_START + id + API_IMAGE_END;
+//   console.log(API_IMAGE);
+//   return API_IMAGE;
+// };
 
 const callMe = () => {
   console.log("clicked");
