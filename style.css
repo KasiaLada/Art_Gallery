@@ -84,3 +84,13 @@ h2 {
 	margin: 20px;
 	font-size: 30px;
 }
+
+li {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+}
+/* img {
+	justify-content: center;
+	align-items: center;
+} */
