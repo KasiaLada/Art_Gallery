@@ -90,7 +90,8 @@ li {
 	display: flex;
 	justify-content: center;
 }
-/* img {
+img {
+	display: flex;
 	justify-content: center;
-	align-items: center;
-} */
+	/* align-items: center; */
+}

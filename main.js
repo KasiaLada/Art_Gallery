@@ -27,6 +27,7 @@ const getSearchArt = () => {
         const img_element = document.createElement("img");
         img_element.src = newImageSrc;
         img_element.style = "max-width: 200px;";
+        img_element.style = "justify-content: center";
 
         document.querySelector("ul").insertAdjacentHTML("beforeend", markup);
         document.querySelector("ul").appendChild(img_element);
@@ -46,5 +47,14 @@ const callMe = () => {
   console.log("clicked");
   getSearchArt();
 };
+
+
+// const showRandomPicture =()=> {
+// const a = Math.floor(Math.random()*pics.length);
+// const img = pics[a];
+// pic.style.backgroundImage = img; 
+//         } 
+  
+//         setInterval(showImage, 1000); 
 
 myButton.addEventListener("click", callMe);
